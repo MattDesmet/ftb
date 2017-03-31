@@ -1,0 +1,27 @@
+<div class='container' style='padding-top:40px;'>
+    <div class="jumbotron" ng-controller="dogController">
+        <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+        <div><input class="btn btn-warning btn-lg"  type="button" value="Reload Page" onClick="window.location.reload()"></div>
+          <!-- <a class="btn btn-primary" href="#/new" role="button">New Item</a> -->
+        </div>
+      </div>
+
+        <h1 class="display-3">Add</h1><br>
+        {{dog}}
+
+        <!-- FIRST NAME field input -->
+        <form>
+        <!-- <form ng-submit = "add()"> -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Dog Type</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" ng-model='newDog.dogtype' ng-init='newDog.dogtype="Lab"'>
+                </div><br>
+            </div>
+        </form>
+        <!-- BUTTON -->
+        <div><button type="submit" class="btn btn-primary" ng-click='add()'>Add Dog Type</button></div>
+
+    </div>
+</div>

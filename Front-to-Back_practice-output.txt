@@ -1,0 +1,240 @@
+Last login: Wed Mar 29 06:39:13 on ttys000
+@md:/data$ mongo
+MongoDB shell version v3.4.2
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.2
+Server has startup warnings: 
+2017-03-29T06:50:12.162-0700 I CONTROL  [initandlisten] 
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] 
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] 
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> show dbs
+admin              0.000GB
+boiler_login       0.000GB
+discussionBoard    0.000GB
+local              0.000GB
+logRegFeb          0.000GB
+meanfriends        0.000GB
+myDB               0.000GB
+questionAndAnswer  0.000GB
+test_first_db      0.000GB
+> use questionAndAnswer
+switched to db questionAndAnswer
+> db.this_is_schemas.find().pretty()
+{
+	"_id" : ObjectId("58db0d28f0ccdc2be64feacd"),
+	"updatedAt" : ISODate("2017-03-29T01:26:00.500Z"),
+	"createdAt" : ISODate("2017-03-29T01:26:00.500Z"),
+	"name" : "BobTEST8888",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58db0dedf0ccdc2be64feace"),
+	"updatedAt" : ISODate("2017-03-29T01:29:17.584Z"),
+	"createdAt" : ISODate("2017-03-29T01:29:17.584Z"),
+	"name" : "now_adding_to_This_Is_Schema",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58db0e8e04ffde2c4e984681"),
+	"updatedAt" : ISODate("2017-03-29T01:31:58.261Z"),
+	"createdAt" : ISODate("2017-03-29T01:31:58.261Z"),
+	"name" : "now_adding_to_This_Is_Schema_Again",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58db0e9804ffde2c4e984682"),
+	"updatedAt" : ISODate("2017-03-29T01:32:08.957Z"),
+	"createdAt" : ISODate("2017-03-29T01:32:08.957Z"),
+	"name" : "BobLoopAround",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58db0efbb7266d2c6e7f4ec9"),
+	"updatedAt" : ISODate("2017-03-29T01:33:47.059Z"),
+	"createdAt" : ISODate("2017-03-29T01:33:47.059Z"),
+	"name" : "Bob__LOOP",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58db0f382671912c7eab525b"),
+	"updatedAt" : ISODate("2017-03-29T01:34:48.689Z"),
+	"createdAt" : ISODate("2017-03-29T01:34:48.689Z"),
+	"name" : "BobbyLoop",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58db0f80c54c682c9630f2fc"),
+	"updatedAt" : ISODate("2017-03-29T01:36:00.043Z"),
+	"createdAt" : ISODate("2017-03-29T01:36:00.043Z"),
+	"name" : "BobBob",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58db1056c54c682c9630f2fd"),
+	"updatedAt" : ISODate("2017-03-29T01:39:34.637Z"),
+	"createdAt" : ISODate("2017-03-29T01:39:34.637Z"),
+	"name" : "Bobdibob",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58db10726ed8d62cd078d794"),
+	"updatedAt" : ISODate("2017-03-29T01:40:02.372Z"),
+	"createdAt" : ISODate("2017-03-29T01:40:02.372Z"),
+	"name" : "Bobtt",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58db10d2e1295f2cef656b7b"),
+	"updatedAt" : ISODate("2017-03-29T01:41:38.344Z"),
+	"createdAt" : ISODate("2017-03-29T01:41:38.344Z"),
+	"name" : "Bobqqq",
+	"__v" : 0
+}
+> showdbs
+2017-03-30T07:51:10.160-0700 E QUERY    [thread1] ReferenceError: showdbs is not defined :
+@(shell):1:1
+> show dbs
+admin              0.000GB
+boiler_login       0.000GB
+discussionBoard    0.000GB
+local              0.000GB
+logRegFeb          0.000GB
+meanfriends        0.000GB
+myDB               0.000GB
+questionAndAnswer  0.000GB
+test_first_db      0.000GB
+> show dbs
+admin              0.000GB
+boiler_login       0.000GB
+discussionBoard    0.000GB
+local              0.000GB
+logRegFeb          0.000GB
+meanfriends        0.000GB
+myDB               0.000GB
+questionAndAnswer  0.000GB
+test_first_db      0.000GB
+> use front_to_back
+switched to db front_to_back
+> db.dogtype.find()
+> 
+> 
+> ^C
+bye
+@md:/data$ mongo
+MongoDB shell version v3.4.2
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.2
+Server has startup warnings: 
+2017-03-29T06:50:12.162-0700 I CONTROL  [initandlisten] 
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] 
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] 
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> ^C
+bye
+@md:/data$ 
+@md:/data$ mongo
+MongoDB shell version v3.4.2
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.2
+Server has startup warnings: 
+2017-03-29T06:50:12.162-0700 I CONTROL  [initandlisten] 
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] 
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] 
+2017-03-29T06:50:12.163-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> ^C
+bye
+@md:/data$ 
+@md:/data$ mongo
+MongoDB shell version v3.4.2
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.2
+Server has startup warnings: 
+2017-03-30T08:06:35.952-0700 I CONTROL  [initandlisten] 
+2017-03-30T08:06:35.952-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-03-30T08:06:35.952-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-03-30T08:06:35.952-0700 I CONTROL  [initandlisten] 
+2017-03-30T08:06:35.952-0700 I CONTROL  [initandlisten] 
+2017-03-30T08:06:35.952-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> show dbs
+admin                0.000GB
+boiler_login         0.000GB
+discussionBoard      0.000GB
+dogDB_front_to_back  0.000GB
+local                0.000GB
+logRegFeb            0.000GB
+meanfriends          0.000GB
+myDB                 0.000GB
+questionAndAnswer    0.000GB
+test_first_db        0.000GB
+> use dogDB_front_to_back
+switched to db dogDB_front_to_back
+> db.the_Dog_Schema.find()
+> db.the_Dog_Schema.find().pretty()
+> db.the_Dog_Schemas.find().pretty()
+> db.the_Dog_Schemas.find()
+> db.the_dog_schemas.find().pretty()
+{
+	"_id" : ObjectId("58dd1e723482ec0f8504bd33"),
+	"dogtype" : "Lab",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dd1ebdd041200f93ab95ce"),
+	"dogtype" : "Lab",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dd1f0e8aaa8a0fa7f0dcbe"),
+	"dogtype" : "Lab",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dd208c1b3b040fe5826fa8"),
+	"updatedAt" : ISODate("2017-03-30T15:13:16.031Z"),
+	"createdAt" : ISODate("2017-03-30T15:13:16.031Z"),
+	"dogtype" : "Lab",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dd2176261ed20fffd7b8c6"),
+	"updatedAt" : ISODate("2017-03-30T15:17:10.012Z"),
+	"createdAt" : ISODate("2017-03-30T15:17:10.012Z"),
+	"dogtype" : "Lab",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dd219306806d10055c6d1f"),
+	"updatedAt" : ISODate("2017-03-30T15:17:39.596Z"),
+	"createdAt" : ISODate("2017-03-30T15:17:39.596Z"),
+	"dogtype" : "Lab",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dd2205119336101892d690"),
+	"updatedAt" : ISODate("2017-03-30T15:19:33.904Z"),
+	"createdAt" : ISODate("2017-03-30T15:19:33.904Z"),
+	"dogtype" : "Lab",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dd220b119336101892d691"),
+	"updatedAt" : ISODate("2017-03-30T15:19:39.148Z"),
+	"createdAt" : ISODate("2017-03-30T15:19:39.148Z"),
+	"dogtype" : "Lab",
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("58dd22894fc5ec102f81a990"),
+	"updatedAt" : ISODate("2017-03-30T15:21:45.642Z"),
+	"createdAt" : ISODate("2017-03-30T15:21:45.642Z"),
+	"dogtype" : "Labyyyy",
+	"__v" : 0
+}
+> 
